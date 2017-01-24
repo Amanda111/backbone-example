@@ -15,6 +15,10 @@ module.exports = {
     resolve: {
         extensions: ['', '.js'],
     },
+    loaders: [{
+      test: /\.scss$/,
+      loaders: ["style", "css", "sass"]
+    }]
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
