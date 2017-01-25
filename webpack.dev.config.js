@@ -18,7 +18,7 @@ module.exports = {
     loaders: [{
       test: /\.scss$/,
       loaders: ["style", "css", "sass"]
-    }]
+    }],
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
