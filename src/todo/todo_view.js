@@ -2,6 +2,10 @@ var Backbone = require("Backbone");
 var _ = require('underscore');
 var $  = require('jquery');
 
+var Person = require("./todo.js");
+var People = require("./todos.js");
+
+
 var todo_view = Backbone.View.extend({
             el: $("body"),
             initialize: function () {
