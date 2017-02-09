@@ -22,8 +22,7 @@ module.exports = {
         extensions: ['', '.js','.scss'],
     },
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
     ]
 };
