@@ -5,10 +5,15 @@
 			"endpoint": "/",
 			"template": "home",
 			"async": false
+		},
+		{
+			"name" : "second",
+			"endpoint": "/second",
+			"async": true
 		}
 	],
 	"data":{
-		"home":{
+		"second":{
 			"title": "second"
 		}
 	}

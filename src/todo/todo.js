@@ -1,7 +1,7 @@
 var Backbone = require("Backbone");
 
 var Person = Backbone.Model.extend({
-            name: null
+    name: null
 });
 
 module.exports = Person;

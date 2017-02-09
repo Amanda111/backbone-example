@@ -12,13 +12,15 @@ module.exports = {
         filename: '[name]'
     },
     devtool: '#eval-source-map',
-    resolve: {
-        extensions: ['', '.js'],
+    module: {
+        loaders: [{
+          test: /\.scss$/,
+          loaders: ["style", "css", "sass"]
+        }],
     },
-    loaders: [{
-      test: /\.scss$/,
-      loaders: ["style", "css", "sass"]
-    }],
+    resolve: {
+        extensions: ['', '.js','.scss'],
+    },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
